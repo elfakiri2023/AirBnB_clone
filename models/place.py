@@ -2,9 +2,10 @@
 """This is the Place class"""
 from models.base_model import BaseModel
 
+
 class Place(BaseModel):
     """This is the Place class"""
-   
+
     amenity_ids = []
     description = ""
     price_by_night = 0
@@ -16,4 +17,3 @@ class Place(BaseModel):
     user_id = ""
     city_id = ""
     name = ""
-
