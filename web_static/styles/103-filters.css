@@ -1,0 +1,116 @@
+@media only screen and (min-width: 768px) {
+	button {
+		max-width: 220px;
+		border: none;
+		border-radius: 4px;
+		margin: auto 30px auto auto;
+		align-self: center;
+		font-size: 18px;
+		background-color: #FF5A5F;
+		color: #FFF;
+		height: 48px;
+		width: 20%;
+	}
+
+	button:hover {
+		opacity: .9;
+		cursor: pointer;
+	}
+
+	.filters {
+		height: 70px;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		width: 100%;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+	}
+
+	.locations,
+	.amenities {
+		flex-direction: column;
+		position: relative;
+		height: 100%;
+		width: 25%;
+		justify-content: center;
+	}
+
+	.locations {
+		border-right: 1px solid #DDDDDD;
+	}
+
+	.locations:focus,
+	.amenities:focus {
+		background-color: antiquewhite;
+	}
+
+	article:focus {
+		background-color: antiquewhite;
+	}
+
+	.locations h3,
+	.amenities h3 {
+		font-weight: 600;
+		margin: 1em 0 auto 30px;
+	}
+
+	.locations h4,
+	.amenities h4 {
+		margin: auto 0 auto 30px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+
+	.popover {
+		background-color: #FAFAFA;
+		margin: 17px 0 0 0;
+		padding: 20px 20px 20px 20px;
+		display: none;
+		border-radius: 4px;
+		border: 1px solid #DDDDDD;
+	}
+
+	.popover h2 {
+		margin: 5px auto 5px auto;
+		font-size: 16px;
+	}
+
+	.popover ul {
+		margin-left: 10px;
+	}
+
+	ul>ul {
+		padding: 0;
+	}
+
+	.popover li {
+		list-style-type: none;
+	}
+
+	.locations:hover,
+	.amenities:hover {
+		cursor: pointer;
+	}
+
+	.locations:hover .popover {
+		cursor: pointer;
+		display: block;
+	}
+
+	.amenities:hover .popover {
+		cursor: pointer;
+		display: block;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px) {}
+
+.filters {
+	display: none;
+}

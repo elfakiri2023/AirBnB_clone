@@ -1,0 +1,152 @@
+.places {
+	display: flex;
+	z-index: -1;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.user {
+	padding: 20px 0 5px;
+}
+
+.user b,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.number_bathrooms {
+	background-image: url(../images/icon_bath.png)
+}
+
+.max_guest {
+	background-image: url(../images/icon_group.png);
+}
+
+.number_rooms {
+	background-image: url(../images/icon_bed.png);
+}
+
+.places h1 {
+	font-size: 30px;
+	width: 100%;
+	margin: 10px auto auto;
+	padding-left: 20px;
+}
+
+.max_guest,
+.number_rooms,
+.number_bathrooms {
+	background-position-x: center;
+	text-align: center;
+	width: 100px;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.places article {
+	display: flex;
+	width: 390px;
+	padding: 20px;
+	flex-wrap: wrap;
+	margin: 20px;
+	border-radius: 4px;
+	border: 1px solid #FF5A5F;
+	box-sizing: border-box;
+}
+
+.places h2 {
+	flex-grow: 1;
+	font-size: 30px;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+
+.places_header {
+	display: flex;
+	width: 100%;
+}
+
+.information {
+	border-top: 1px solid #DDDDDD;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	border-bottom: 1px solid #DDDDDD;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.places .amenities,
+.places .reviews {
+	width: 100%;
+	height: inherit;
+	margin-top: 40px;
+}
+
+.price_by_night {
+	justify-content: center;
+	height: 60px;
+	align-items: center;
+	padding: 5px;
+	display: flex;
+	margin-bottom: 5px;
+	min-width: 60px;
+	border: 4px solid #FF5A5F;
+	border-radius: 50%;
+	color: #FF5A5F;
+	font-size: 30px;
+}
+
+.places .amenities ul,
+.places .reviews ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.places_amenities_tv {
+	background-image: url(../images/icon_tv.png);
+}
+
+.places_amenities_wifi {
+	background-image: url(../images/icon_wifi.png);
+}
+
+.places_amenities_gym {
+	background-image: url(../images/icon_pets.png);
+}
+
+.places_amenities_tv,
+.places_amenities_gym,
+.places_amenities_wifi {
+	background-size: cover;
+	height: 20px;
+	background-repeat: no-repeat;
+	width: 20px;
+}
+
+.places .amenities h2,
+.places .reviews h2 {
+	text-align: left;
+	border-bottom: 1px solid #DDDDDD;
+	font-size: 16px;
+}
+
+.places .reviews h3 {
+	font-size: 14px;
+}
+
+.places .reviews p {
+	font-size: 12px;
+}
+
+.places .amenities ul li {
+	display: flex;
+	align-items: end;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+	align-content: center;
+}

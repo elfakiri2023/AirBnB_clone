@@ -1,0 +1,116 @@
+header {
+	z-index: 4;
+	float: left;
+	text-align: left;
+	color: #fff;
+	height: 3.5rem;
+	background-size: contain;
+	background-position: center;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+}
+
+input {
+	display: none;
+}
+
+.bar_level1 li ul {
+	display: none;
+}
+
+.bar_level1 li {
+	display: none;
+}
+
+#check_the_main:checked~* .bar_level1 {
+	display: block;
+}
+
+.nav_burger {
+	font-size: 2rem;
+	font-weight: bolder;
+	display: inline-block;
+	transition: .2s ease-in-out;
+	transform: rotate(90deg);
+	color: lightslategray;
+	margin: .6rem 0 0 1rem;
+}
+
+.nav_burger:hover {
+	transition: .2s ease-in-out;
+	cursor: pointer;
+	transform: rotate(0deg);
+	color: silver;
+}
+
+.nav_burger:focus {
+	background-color: antiquewhite;
+}
+
+#check_the_main:checked {
+	cursor: pointer;
+	transform: rotate(0deg);
+	transition: .2s ease-in-out;
+	color: silver;
+}
+
+.bar_level1 {
+	transition: .2s ease-in-out;
+	height: 0%;
+	border-radius: 4px;
+	background-color: aliceblue;
+	width: 0%;
+}
+
+#check_the_main:checked~* .bar_level1 li {
+	transition: .5s ease-in-out;
+	display: block;
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin: .5rem;
+	color: lightslategray;
+}
+
+.bar_level1 li label span:hover,
+ul li span:hover {
+	display: inline-block;
+	width: 100%;
+	padding: .2rem 1rem;
+	cursor: pointer;
+	border-radius: 4px;
+	color: #FAFAFA;
+	background-color: #434343;
+}
+
+#check2:checked+ul {
+	display: block;
+}
+
+#third_check:checked+ul {
+	display: block;
+}
+
+#check_the_main:checked~* .bar_level1 {
+	margin: 1rem;
+	padding: .8rem;
+	width: 50vw;
+	flex-direction: column;
+	transition: .3s ease-in-out;
+	display: block;
+}
+
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 768px) {
+	header {
+		background-position: left;
+		background-position-x: 1rem;
+	}
+
+	.mobile_nav {
+		display: none;
+	}
+}
